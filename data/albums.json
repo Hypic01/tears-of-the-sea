@@ -1,0 +1,683 @@
+[
+ {
+  "slug": "seasoning-the-jazz-trilogy",
+  "title": "Seasoning The Jazz Trilogy",
+  "year": 2026,
+  "date": "13 Aug 2026 00:00:00 GMT",
+  "tracks": 24,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/seasoning-the-jazz-trilogy",
+  "cover": "assets/covers/seasoning-the-jazz-trilogy.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "clouds-under-dopamine",
+  "title": "Clouds Under Dopamine",
+  "year": 2026,
+  "date": "20 Jun 2026 00:00:00 GMT",
+  "tracks": 10,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/clouds-under-dopamine",
+  "cover": "assets/covers/clouds-under-dopamine.webp",
+  "spineX": 0.253
+ },
+ {
+  "slug": "stories-and-truths",
+  "title": "Stories And Truths",
+  "year": 2026,
+  "date": "19 Mar 2026 00:00:00 GMT",
+  "tracks": 6,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/stories-and-truths",
+  "cover": "assets/covers/stories-and-truths.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "this-isnt-ai-jazz",
+  "title": "This Isn't AI Jazz",
+  "year": 2026,
+  "date": "09 Feb 2026 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/this-isnt-ai-jazz",
+  "cover": "assets/covers/this-isnt-ai-jazz.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "beauty-is-still-something-simple",
+  "title": "Beauty Is Still Something Simple",
+  "year": 2026,
+  "date": "05 Jan 2026 00:00:00 GMT",
+  "tracks": 9,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/beauty-is-still-something-simple",
+  "cover": "assets/covers/beauty-is-still-something-simple.webp",
+  "spineX": 0.203
+ },
+ {
+  "slug": "brushes",
+  "title": "Brushes",
+  "year": 2025,
+  "date": "12 Dec 2025 00:00:00 GMT",
+  "tracks": 12,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/brushes",
+  "cover": "assets/covers/brushes.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "jazz-up-your-christmas",
+  "title": "Jazz Up Your Christmas",
+  "year": 2025,
+  "date": "01 Dec 2025 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/jazz-up-your-christmas",
+  "cover": "assets/covers/jazz-up-your-christmas.webp",
+  "spineX": 0.02
+ },
+ {
+  "slug": "lsd-beats",
+  "title": "LSD Beats",
+  "year": 2025,
+  "date": "19 Oct 2025 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/lsd-beats",
+  "cover": "assets/covers/lsd-beats.webp",
+  "spineX": 0.24
+ },
+ {
+  "slug": "this-isnt-hentai-jazz-deluxe",
+  "title": "This Isn't Hentai Jazz [Deluxe]",
+  "year": 2025,
+  "date": "29 Aug 2025 00:00:00 GMT",
+  "tracks": 12,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/this-isnt-hentai-jazz-deluxe",
+  "cover": "assets/covers/this-isnt-hentai-jazz-deluxe.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "contemplate-your-darkness",
+  "title": "Contemplate Your Darkness",
+  "year": 2025,
+  "date": "25 Jul 2025 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/contemplate-your-darkness",
+  "cover": "assets/covers/contemplate-your-darkness.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "this-isnt-hentai-jazz",
+  "title": "This Isn't Hentai Jazz",
+  "year": 2025,
+  "date": "11 Jun 2025 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/this-isnt-hentai-jazz",
+  "cover": "assets/covers/this-isnt-hentai-jazz.webp",
+  "spineX": 0.302
+ },
+ {
+  "slug": "fragments-of-digital-soul",
+  "title": "Fragments of Digital Soul",
+  "year": 2025,
+  "date": "05 May 2025 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/fragments-of-digital-soul",
+  "cover": "assets/covers/fragments-of-digital-soul.webp",
+  "spineX": 0.268
+ },
+ {
+  "slug": "ethereal-moments",
+  "title": "Ethereal Moments",
+  "year": 2025,
+  "date": "21 Apr 2025 00:00:00 GMT",
+  "tracks": 6,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/ethereal-moments",
+  "cover": "assets/covers/ethereal-moments.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "maid-cafe",
+  "title": "Maid Cafe",
+  "year": 2024,
+  "date": "26 Dec 2024 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/maid-cafe",
+  "cover": "assets/covers/maid-cafe.webp",
+  "spineX": 0.288
+ },
+ {
+  "slug": "jamming-through-the-cosmos",
+  "title": "Jamming Through The Cosmos",
+  "year": 2024,
+  "date": "14 Dec 2024 00:00:00 GMT",
+  "tracks": 10,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/jamming-through-the-cosmos",
+  "cover": "assets/covers/jamming-through-the-cosmos.webp",
+  "spineX": 0.165
+ },
+ {
+  "slug": "my-sensei-nujabes",
+  "title": "My Sensei Nujabes",
+  "year": 2024,
+  "date": "02 Nov 2024 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/my-sensei-nujabes",
+  "cover": "assets/covers/my-sensei-nujabes.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "enesis",
+  "title": "𝒢ENESIS",
+  "year": 2024,
+  "date": "16 Oct 2024 00:00:00 GMT",
+  "tracks": 9,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/enesis",
+  "cover": "assets/covers/enesis.webp",
+  "spineX": 0.25
+ },
+ {
+  "slug": "my-crimson-dreams",
+  "title": "My Crimson Dreams",
+  "year": 2024,
+  "date": "16 Sep 2024 00:00:00 GMT",
+  "tracks": 7,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/my-crimson-dreams",
+  "cover": "assets/covers/my-crimson-dreams.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "almost-5-minutes-of-happiness",
+  "title": "Almost 5 Minutes Of Happiness",
+  "year": 2024,
+  "date": "21 Aug 2024 22:21:02 GMT",
+  "tracks": 2,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/almost-5-minutes-of-happiness",
+  "cover": "assets/covers/almost-5-minutes-of-happiness.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "the-tears-of-the-sea",
+  "title": "The Tears Of The Sea",
+  "year": 2024,
+  "date": "01 Aug 2024 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/the-tears-of-the-sea",
+  "cover": "assets/covers/the-tears-of-the-sea.webp",
+  "spineX": 0.255,
+  "featured": true
+ },
+ {
+  "slug": "everything-is-still-under-control",
+  "title": "Everything Is Still Under Control",
+  "year": 2024,
+  "date": "27 Jun 2024 00:00:00 GMT",
+  "tracks": 7,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/everything-is-still-under-control",
+  "cover": "assets/covers/everything-is-still-under-control.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "stories-live-in-time",
+  "title": "Stories Live In Time",
+  "year": 2024,
+  "date": "05 Jun 2024 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/stories-live-in-time",
+  "cover": "assets/covers/stories-live-in-time.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "nocturnal-creatures",
+  "title": "Nocturnal Creatures",
+  "year": 2024,
+  "date": "08 May 2024 00:00:00 GMT",
+  "tracks": 9,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/nocturnal-creatures",
+  "cover": "assets/covers/nocturnal-creatures.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "happy-birthday",
+  "title": "Happy Birthday",
+  "year": 2024,
+  "date": "03 Apr 2024 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/happy-birthday",
+  "cover": "assets/covers/happy-birthday.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "the-light-of-my-demons",
+  "title": "The Light Of My Demons",
+  "year": 2024,
+  "date": "05 Mar 2024 00:00:00 GMT",
+  "tracks": 10,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/the-light-of-my-demons",
+  "cover": "assets/covers/the-light-of-my-demons.webp",
+  "spineX": 0.205
+ },
+ {
+  "slug": "echoes-of-the-subconscious",
+  "title": "Echoes Of The Subconscious",
+  "year": 2024,
+  "date": "04 Feb 2024 00:00:00 GMT",
+  "tracks": 4,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/echoes-of-the-subconscious",
+  "cover": "assets/covers/echoes-of-the-subconscious.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "my-rare-tapes-trilogy-remaster",
+  "title": "My Rare Tapes Trilogy [Remaster]",
+  "year": 2024,
+  "date": "19 Jan 2024 00:00:00 GMT",
+  "tracks": 22,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/my-rare-tapes-trilogy-remaster",
+  "cover": "assets/covers/my-rare-tapes-trilogy-remaster.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "in-the-dreams-of-a-dragon",
+  "title": "In The Dreams Of a Dragon",
+  "year": 2024,
+  "date": "02 Jan 2024 00:00:00 GMT",
+  "tracks": 7,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/in-the-dreams-of-a-dragon",
+  "cover": "assets/covers/in-the-dreams-of-a-dragon.webp",
+  "spineX": 0.2
+ },
+ {
+  "slug": "beauty-is-something-simple",
+  "title": "Beauty Is Something Simple",
+  "year": 2023,
+  "date": "30 Nov 2023 00:00:00 GMT",
+  "tracks": 10,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/beauty-is-something-simple",
+  "cover": "assets/covers/beauty-is-something-simple.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "sun-colored-eyes",
+  "title": "Sun Colored Eyes",
+  "year": 2023,
+  "date": "26 Oct 2023 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/sun-colored-eyes",
+  "cover": "assets/covers/sun-colored-eyes.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "beatmaking-sessions-v-1",
+  "title": "Beatmaking Sessions V.1",
+  "year": 2023,
+  "date": "15 Oct 2023 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/beatmaking-sessions-v-1",
+  "cover": "assets/covers/beatmaking-sessions-v-1.webp",
+  "spineX": 0.29
+ },
+ {
+  "slug": "the-dead-eyes-in-the-shadow",
+  "title": "The Dead Eyes In The Shadow",
+  "year": 2023,
+  "date": "19 Sep 2023 00:00:00 GMT",
+  "tracks": 10,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/the-dead-eyes-in-the-shadow",
+  "cover": "assets/covers/the-dead-eyes-in-the-shadow.webp",
+  "spineX": 0.288
+ },
+ {
+  "slug": "everything-is-under-control",
+  "title": "Everything Is Under Control",
+  "year": 2023,
+  "date": "26 Aug 2023 00:00:00 GMT",
+  "tracks": 9,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/everything-is-under-control",
+  "cover": "assets/covers/everything-is-under-control.webp",
+  "spineX": 0.198
+ },
+ {
+  "slug": "velvet-notes",
+  "title": "Velvet Notes",
+  "year": 2023,
+  "date": "14 Jul 2023 00:00:00 GMT",
+  "tracks": 11,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/velvet-notes",
+  "cover": "assets/covers/velvet-notes.webp",
+  "spineX": 0.26
+ },
+ {
+  "slug": "cries-of-a-lost-soul",
+  "title": "Cries Of a Lost Soul",
+  "year": 2023,
+  "date": "05 Jul 2023 03:45:06 GMT",
+  "tracks": 9,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/cries-of-a-lost-soul",
+  "cover": "assets/covers/cries-of-a-lost-soul.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "-",
+  "title": "死ぬことを学ぶための戦略",
+  "year": 2023,
+  "date": "22 Jun 2023 15:50:55 GMT",
+  "tracks": 10,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/-",
+  "cover": "assets/covers/-.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "bootleg-tapes-v-1",
+  "title": "Bootleg Tapes V.1",
+  "year": 2023,
+  "date": "18 Jun 2023 03:43:01 GMT",
+  "tracks": 10,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/bootleg-tapes-v-1",
+  "cover": "assets/covers/bootleg-tapes-v-1.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "in-search-of-freedom",
+  "title": "In Search Of Freedom",
+  "year": 2023,
+  "date": "15 May 2023 01:14:19 GMT",
+  "tracks": 10,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/in-search-of-freedom",
+  "cover": "assets/covers/in-search-of-freedom.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "the-theory-of-premonitions",
+  "title": "The Theory Of Premonitions",
+  "year": 2023,
+  "date": "28 Apr 2023 00:00:00 GMT",
+  "tracks": 10,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/the-theory-of-premonitions",
+  "cover": "assets/covers/the-theory-of-premonitions.webp",
+  "spineX": 0.165
+ },
+ {
+  "slug": "light-up-your-heart",
+  "title": "Light Up Your Heart",
+  "year": 2023,
+  "date": "19 Apr 2023 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/light-up-your-heart",
+  "cover": "assets/covers/light-up-your-heart.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "children-of-mirror",
+  "title": "Children Of Mirror",
+  "year": 2023,
+  "date": "06 Apr 2023 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/children-of-mirror",
+  "cover": "assets/covers/children-of-mirror.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "seasoning-the-jazz-v-3",
+  "title": "Seasoning The Jazz V.3",
+  "year": 2023,
+  "date": "26 Mar 2023 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/seasoning-the-jazz-v-3",
+  "cover": "assets/covers/seasoning-the-jazz-v-3.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "one-secret-after-another",
+  "title": "One Secret After Another",
+  "year": 2023,
+  "date": "11 Mar 2023 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/one-secret-after-another",
+  "cover": "assets/covers/one-secret-after-another.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "the-funeral-of-the-flowers",
+  "title": "The Funeral Of The Flowers",
+  "year": 2023,
+  "date": "13 Feb 2023 00:00:00 GMT",
+  "tracks": 7,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/the-funeral-of-the-flowers",
+  "cover": "assets/covers/the-funeral-of-the-flowers.webp",
+  "spineX": 0.165
+ },
+ {
+  "slug": "clouds-under-nicotine",
+  "title": "Clouds Under Nicotine",
+  "year": 2023,
+  "date": "29 Jan 2023 00:00:00 GMT",
+  "tracks": 6,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/clouds-under-nicotine",
+  "cover": "assets/covers/clouds-under-nicotine.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "seasoning-the-jazz-v-2",
+  "title": "Seasoning The Jazz V.2",
+  "year": 2023,
+  "date": "16 Jan 2023 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/seasoning-the-jazz-v-2",
+  "cover": "assets/covers/seasoning-the-jazz-v-2.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "lo-fi-for-reading-manga-v-2",
+  "title": "Lo-Fi For Reading Manga V.2",
+  "year": 2023,
+  "date": "02 Jan 2023 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/lo-fi-for-reading-manga-v-2",
+  "cover": "assets/covers/lo-fi-for-reading-manga-v-2.webp",
+  "spineX": 0.165
+ },
+ {
+  "slug": "hentai-jazz-deluxe",
+  "title": "Hentai Jazz Deluxe",
+  "year": 2022,
+  "date": "20 Dec 2022 16:52:55 GMT",
+  "tracks": 12,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/hentai-jazz-deluxe",
+  "cover": "assets/covers/hentai-jazz-deluxe.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "the-worst-generation",
+  "title": "The Worst Generation",
+  "year": 2022,
+  "date": "08 Dec 2022 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/the-worst-generation",
+  "cover": "assets/covers/the-worst-generation.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "air-of-other-times",
+  "title": "Air Of Other Times",
+  "year": 2022,
+  "date": "28 Nov 2022 00:00:00 GMT",
+  "tracks": 6,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/air-of-other-times",
+  "cover": "assets/covers/air-of-other-times.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "lo-fi-for-reading-manga",
+  "title": "Lo-Fi For Reading Manga",
+  "year": 2022,
+  "date": "08 Nov 2022 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/lo-fi-for-reading-manga",
+  "cover": "assets/covers/lo-fi-for-reading-manga.webp",
+  "spineX": 0.247
+ },
+ {
+  "slug": "seasoning-the-jazz-v-1",
+  "title": "Seasoning The Jazz V.1",
+  "year": 2022,
+  "date": "24 Oct 2022 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/seasoning-the-jazz-v-1",
+  "cover": "assets/covers/seasoning-the-jazz-v-1.webp",
+  "spineX": 0.165
+ },
+ {
+  "slug": "the-knowledge-behind-the-eyes",
+  "title": "The Knowledge Behind The Eyes",
+  "year": 2022,
+  "date": "17 Oct 2022 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/the-knowledge-behind-the-eyes",
+  "cover": "assets/covers/the-knowledge-behind-the-eyes.webp",
+  "spineX": 0.143
+ },
+ {
+  "slug": "betrayals-and-secrets",
+  "title": "Betrayals And Secrets",
+  "year": 2022,
+  "date": "19 Sep 2022 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/betrayals-and-secrets",
+  "cover": "assets/covers/betrayals-and-secrets.webp",
+  "spineX": 0.22
+ },
+ {
+  "slug": "origami-brushes-mini-tape",
+  "title": "Origami Brushes Mini Tape",
+  "year": 2022,
+  "date": "02 Sep 2022 00:00:00 GMT",
+  "tracks": 6,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/origami-brushes-mini-tape",
+  "cover": "assets/covers/origami-brushes-mini-tape.webp",
+  "spineX": 0.265
+ },
+ {
+  "slug": "more-of-the-same-v-1",
+  "title": "More Of The Same V.1",
+  "year": 2022,
+  "date": "16 Aug 2022 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/more-of-the-same-v-1",
+  "cover": "assets/covers/more-of-the-same-v-1.webp",
+  "spineX": 0.25
+ },
+ {
+  "slug": "children-of-anomaly",
+  "title": "Children Of Anomaly",
+  "year": 2022,
+  "date": "26 Jul 2022 00:00:00 GMT",
+  "tracks": 10,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/children-of-anomaly",
+  "cover": "assets/covers/children-of-anomaly.webp",
+  "spineX": 0.17
+ },
+ {
+  "slug": "memories-of-semipalatinsk",
+  "title": "Memories Of Semipalatinsk",
+  "year": 2022,
+  "date": "01 Jul 2022 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/memories-of-semipalatinsk",
+  "cover": "assets/covers/memories-of-semipalatinsk.webp",
+  "spineX": 0.263
+ },
+ {
+  "slug": "seasoning-the-sample-v-3",
+  "title": "Seasoning The Sample V.3",
+  "year": 2022,
+  "date": "10 Jun 2022 00:00:00 GMT",
+  "tracks": 7,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/seasoning-the-sample-v-3",
+  "cover": "assets/covers/seasoning-the-sample-v-3.webp",
+  "spineX": 0.185
+ },
+ {
+  "slug": "seasoning-the-sample-v-2",
+  "title": "Seasoning The Sample V.2",
+  "year": 2022,
+  "date": "15 May 2022 00:00:00 GMT",
+  "tracks": 7,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/seasoning-the-sample-v-2",
+  "cover": "assets/covers/seasoning-the-sample-v-2.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "seasoning-the-sample-v-1",
+  "title": "Seasoning The Sample V.1",
+  "year": 2022,
+  "date": "01 May 2022 00:00:00 GMT",
+  "tracks": 7,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/seasoning-the-sample-v-1",
+  "cover": "assets/covers/seasoning-the-sample-v-1.webp",
+  "spineX": 0.245
+ },
+ {
+  "slug": "my-rare-tapes-v-3",
+  "title": "My Rare Tapes V.3",
+  "year": 2022,
+  "date": "02 Apr 2022 00:00:00 GMT",
+  "tracks": 7,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/my-rare-tapes-v-3",
+  "cover": "assets/covers/my-rare-tapes-v-3.webp",
+  "spineX": 0.237
+ },
+ {
+  "slug": "beyond-what-you-see",
+  "title": "Beyond What You See",
+  "year": 2022,
+  "date": "13 Mar 2022 00:00:00 GMT",
+  "tracks": 12,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/beyond-what-you-see",
+  "cover": "assets/covers/beyond-what-you-see.webp",
+  "spineX": 0.23
+ },
+ {
+  "slug": "children-of-radiation",
+  "title": "Children Of Radiation",
+  "year": 2022,
+  "date": "05 Mar 2022 00:00:00 GMT",
+  "tracks": 9,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/children-of-radiation",
+  "cover": "assets/covers/children-of-radiation.webp",
+  "spineX": 0.237
+ },
+ {
+  "slug": "virtual-nirvana",
+  "title": "Virtual Nirvana",
+  "year": 2022,
+  "date": "24 Feb 2022 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/virtual-nirvana",
+  "cover": "assets/covers/virtual-nirvana.webp",
+  "spineX": 0.23
+ },
+ {
+  "slug": "my-unreleased-tracks-vol-1",
+  "title": "My Unreleased Tracks Vol.1",
+  "year": 2022,
+  "date": "19 Feb 2022 00:00:00 GMT",
+  "tracks": 10,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/my-unreleased-tracks-vol-1",
+  "cover": "assets/covers/my-unreleased-tracks-vol-1.webp",
+  "spineX": 0.445
+ },
+ {
+  "slug": "my-rare-tapes-v-2",
+  "title": "My Rare Tapes V.2",
+  "year": 2022,
+  "date": "16 Feb 2022 00:00:00 GMT",
+  "tracks": 8,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/my-rare-tapes-v-2",
+  "cover": "assets/covers/my-rare-tapes-v-2.webp",
+  "spineX": 0.223
+ },
+ {
+  "slug": "my-rare-tapes-v-1",
+  "title": "My Rare Tapes V.1",
+  "year": 2022,
+  "date": "13 Feb 2022 00:00:00 GMT",
+  "tracks": 7,
+  "bandcamp": "https://mabisyo.bandcamp.com/album/my-rare-tapes-v-1",
+  "cover": "assets/covers/my-rare-tapes-v-1.webp",
+  "spineX": 0.21
+ }
+]
