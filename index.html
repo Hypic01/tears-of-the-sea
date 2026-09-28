@@ -10,7 +10,7 @@
 <meta property="og:description" content="The cover art of Mabisyo's beat tape, brought to life as a seamless underwater loop. An experiment by Joon Park.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tears-of-the-sea.vercel.app/">
-<meta property="og:image" content="https://tears-of-the-sea.vercel.app/assets/poster-wide.jpg">
+<meta property="og:image" content="https://tears-of-the-sea.vercel.app/assets/poster-wide.jpg?v=2">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='%23ec3f3a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -177,8 +177,8 @@ html{scroll-behavior:auto}
 </div>
 <div class="hero-window">
 <picture>
-<source media="(max-aspect-ratio: 1/1)" srcset="assets/poster-tall.jpg">
-<img class="hero-media" src="assets/poster-wide.jpg" alt="Album art: a girl underwater, eyes open, surrounded by orange and red koi and rising bubbles">
+<source media="(max-aspect-ratio: 1/1)" srcset="assets/poster-tall.jpg?v=2">
+<img class="hero-media" src="assets/poster-wide.jpg?v=2" alt="Album art: a girl underwater, eyes open, surrounded by orange and red koi and rising bubbles">
 </picture>
 <video class="hero-media hero-video" id="heroVideo" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
 </div>
@@ -299,8 +299,8 @@ html{scroll-behavior:auto}
   // One master video. The tall cut is a straight crop of the wide one, so every ratio shows the same scene.
   // The hero's own shape picks the cut; AV1 where the browser decodes it, H.264 everywhere else.
   var VIDEO = {
-    wide: { av1: 'assets/hero-wide.av1.mp4', h264: 'assets/hero-wide.h264.mp4', codec: 'av01.0.12M.08', poster: 'assets/poster-wide.jpg' },
-    tall: { av1: 'assets/hero-tall.av1.mp4', h264: 'assets/hero-tall.h264.mp4', codec: 'av01.0.08M.08', poster: 'assets/poster-tall.jpg' }
+    wide: { av1: 'assets/hero-wide.av1.mp4?v=2', h264: 'assets/hero-wide.h264.mp4?v=2', codec: 'av01.0.12M.08', poster: 'assets/poster-wide.jpg?v=2' },
+    tall: { av1: 'assets/hero-tall.av1.mp4?v=2', h264: 'assets/hero-tall.h264.mp4?v=2', codec: 'av01.0.08M.08', poster: 'assets/poster-tall.jpg?v=2' }
   };
   var reduce = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
   var hero = document.getElementById('hero');
