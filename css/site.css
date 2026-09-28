@@ -71,11 +71,17 @@ ol{padding:0;list-style:none}
 .rows{--h:clamp(230px,24vw,340px);--sw:calc(var(--h) * .11);display:flex;flex-wrap:wrap;align-items:flex-end;gap:clamp(36px,4vw,56px) clamp(28px,3vw,48px);padding:0 var(--pad)}
 .year{display:flex;align-items:flex-end;gap:7px;border-bottom:2px solid rgba(255,70,68,.5);padding-bottom:0}
 .year-n{writing-mode:vertical-rl;transform:rotate(180deg);font-size:17px;opacity:.8;padding:0 2px 6px 6px}
-.cas{position:relative;flex:none;width:var(--sw);height:var(--h);padding:0;border:0;background:var(--navy);overflow:hidden;cursor:pointer;transition:width .55s var(--ease),transform .35s var(--ease)}
-.cas img{position:absolute;left:0;top:0;height:100%;width:var(--h);max-width:none;transform:translateX(calc(var(--x) * -100%));transition:transform .55s var(--ease)}
+.cas{position:relative;flex:none;width:var(--sw);height:var(--h);padding:0;border:0;background:none;cursor:pointer;transition:transform .35s var(--ease)}
+.slice{position:absolute;inset:0;overflow:hidden;background:var(--navy)}
+.slice img{position:absolute;left:0;top:0;height:100%;width:var(--h);max-width:none;transform:translateX(calc(var(--x) * -100%))}
+/* the whole cover sits behind its own spine and is uncovered outward from it, over its neighbours.
+   Nothing changes size, so no tape is pushed to another row. */
+.full{position:absolute;top:0;left:calc(var(--x) * var(--h) * -1 + var(--nudge,0px));width:var(--h);height:var(--h);max-width:none;pointer-events:none;
+  clip-path:inset(0 calc((1 - var(--x) - .11) * 100%) 0 calc(var(--x) * 100%));opacity:0;box-shadow:0 24px 60px rgba(0,0,0,.6);
+  transition:clip-path .55s var(--ease),opacity .2s ease .35s}
 .cas:hover,.cas:focus-visible{transform:translateY(-8px)}
-.cas[aria-pressed="true"]{width:var(--h);transform:translateY(-14px)}
-.cas[aria-pressed="true"] img{transform:none}
+.cas[aria-pressed="true"]{transform:translateY(-14px);z-index:4}
+.cas[aria-pressed="true"] .full{clip-path:inset(0);opacity:1;transition:clip-path .55s var(--ease),opacity .1s ease}
 .now{position:sticky;bottom:0;z-index:5;margin-top:clamp(36px,4vw,56px);padding:18px var(--pad) 16px;text-align:center;background:var(--deep);border-top:1px solid rgba(255,70,68,.3)}   /* stays in view while you browse the shelf */
 .now-title{font-size:clamp(26px,2.8vw,38px);line-height:1.1}
 .now-meta{margin-top:4px;align-items:center;font-size:19px;display:flex;justify-content:center;flex-wrap:wrap;gap:6px 28px}
@@ -99,5 +105,5 @@ ol{padding:0;list-style:none}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .cas,.cas img,.nav{transition:none}
+  .cas,.full,.cas[aria-pressed="true"] .full,.nav{transition:none}
 }

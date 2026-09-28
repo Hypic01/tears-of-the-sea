@@ -24,7 +24,7 @@
 ## Deviation from the spec (decided while planning)
 
 - **No GSAP.** The opening is one scrubbed value, so `position: sticky` plus a scroll listener with a smoothed `p` does it with no dependency and no pin-spacer jumps. Same look.
-- **Shelf spines animate `width`** when one opens (layout, not transform). It is one small row, and clip-path cannot push neighbours aside.
+- **An opened tape shows its cover over its neighbours** (clip-path uncovering outward from the spine). Nothing changes size, so no tape moves to another row (Joon, 2026-09-28).
 - **No "now playing" track label** on the opened painting (mockup A2 had one). The page has no audio, so the label would claim something false.
 
 ## Files
