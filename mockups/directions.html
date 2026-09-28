@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mabisyo site: three directions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap">
+<style>
+:root{--navy:#1A1D2E;--navy-deep:#11131F;--red:#E05252;--foam:#F3EEE9;--f:'Fondamento',Georgia,serif}
+*{box-sizing:border-box}
+html{background:#0d0f18}
+body{margin:0;color:#d9d5d2;font:16px/1.55 Georgia,'Times New Roman',serif;padding:56px 16px 120px}
+.board{max-width:1500px;margin:0 auto}
+.board>header{max-width:760px;margin-bottom:72px}
+.board h1{font:400 44px/1.1 var(--f);color:var(--red);margin:0 0 16px}
+.board h2{font:400 34px/1.1 var(--f);color:var(--red);margin:0 0 8px}
+.board p{margin:0 0 12px;max-width:68ch}
+.dir{margin:0 0 110px;padding-top:28px;border-top:1px solid rgba(224,82,82,.35)}
+.dir .lede{color:#a9a6ad;margin-bottom:28px}
+.pick{display:inline-block;font:400 15px var(--f);color:var(--navy);background:var(--red);padding:2px 10px;margin-left:12px;vertical-align:middle}
+.shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 24px}
+.shot{margin:0}
+.shot figcaption{padding:10px 2px 0;color:#a9a6ad;font-size:14.5px}
+.shot figcaption b{font:400 17px var(--f);color:var(--foam);margin-right:8px}
+.vp{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--navy);outline:1px solid rgba(255,255,255,.08)}
+.frame{position:absolute;left:0;top:0;width:1440px;height:810px;transform-origin:0 0;overflow:hidden;background:var(--navy);color:var(--red);font-family:var(--f)}
+@media (max-width:820px){.shots{grid-template-columns:minmax(0,1fr)}.board h1{font-size:34px}}
+
+/* shared pieces inside frames */
+.paper{background:var(--navy)}
+.paper::before{content:"";position:absolute;inset:0;background:url(assets/card-paper.jpg);background-size:1200px 200px;opacity:.55;pointer-events:none}
+.paper>*{z-index:1}
+.fill{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.nav{position:absolute;top:30px;right:44px;display:flex;gap:34px;font-size:22px;z-index:5}
+.nav.on-art{color:var(--foam);text-shadow:0 1px 12px rgba(17,19,31,.55)}
+.wm{position:absolute;top:30px;left:44px;font-size:22px;z-index:5}
+.tag{position:absolute;left:44px;bottom:28px;font-size:15px;opacity:.75;z-index:5}
+.trk{list-style:none;margin:0;padding:0;font-size:34px;line-height:1.42}
+.trk li{display:flex;gap:16px;align-items:baseline;white-space:nowrap}
+.trk .d{font-size:20px;opacity:.7;margin-left:auto;padding-left:40px}
+.crease{height:2px;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(255,255,255,.05));}
+
+/* A1: the insert as an object, exactly as printed */
+.a1{background:var(--navy-deep)}
+.a1 .obj{position:absolute;left:50%;top:50%;width:660px;height:660px;transform:translate(-50%,-50%);box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.a1 .cue{color:var(--red);text-shadow:none}
+.cue{position:absolute;right:44px;bottom:30px;font-size:18px;color:var(--foam);z-index:5;text-shadow:0 1px 12px rgba(17,19,31,.6)}
+
+/* A2: the card has slid away to a spine; the painting is wide and moving */
+.a2 .spine{position:absolute;left:0;top:0;width:150px;height:810px;z-index:3;box-shadow:12px 0 40px rgba(17,19,31,.45)}
+.a2 .spine img{position:absolute;left:150px;top:96px;width:620px;transform-origin:0 0;transform:rotate(90deg);margin-left:-32px}
+.a2 .art{position:absolute;left:150px;top:0;right:0;bottom:0}
+.play{position:absolute;right:44px;bottom:34px;z-index:5;color:var(--foam);font-size:22px;text-shadow:0 1px 12px rgba(17,19,31,.6)}
+.play span{opacity:.7;font-size:17px;margin-left:10px}
+
+/* A3: the card laid flat */
+.a3 .title{position:absolute;left:110px;top:64px;width:900px}
+.a3 .crease{position:absolute;left:0;right:0;top:196px}
+.a3 .la{position:absolute;left:110px;top:330px;height:150px}
+.a3 .lb{position:absolute;right:110px;top:330px;height:150px}
+.a3 .ta{position:absolute;left:270px;top:296px;width:440px;font-size:30px}
+.a3 .tb{position:absolute;left:770px;top:296px;width:400px;font-size:30px}
+.a3 .meta{position:absolute;left:110px;right:110px;bottom:140px;display:flex;justify-content:space-between;font-size:20px;opacity:.85}
+.a3 .peek{position:absolute;left:0;right:0;bottom:-250px;height:340px;display:flex;justify-content:center;gap:10px}
+
+/* shelf of cassettes: every Mabisyo cover has a printed spine, so the catalog is the shelf */
+.cas{position:relative;width:74px;height:340px;overflow:hidden;flex:none;box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.cas img{position:absolute;top:0;left:0;height:100%;width:auto;max-width:none}
+.a4 .shelf{position:absolute;left:0;right:0;top:150px;display:flex;justify-content:center;align-items:flex-end;gap:12px}
+.a4 .cas{height:430px;width:92px}
+.a4 .cas.sel{width:430px;transform:translateY(-34px)}
+.a4 .ledge{position:absolute;left:100px;right:100px;top:580px;height:2px;background:rgba(224,82,82,.5)}
+.a4 .now{position:absolute;left:0;right:0;top:622px;text-align:center}
+.a4 .now .n{font-size:40px;line-height:1.1}
+.a4 .now .s{font-size:20px;opacity:.8;margin-top:10px}
+.a4 .head{position:absolute;left:100px;top:70px;font-size:22px;opacity:.85}
+
+/* B: the descent */
+.gauge{position:absolute;right:52px;top:110px;bottom:90px;width:1px;background:rgba(243,238,233,.35);z-index:5}
+.gauge i{position:absolute;right:-5px;width:11px;height:11px;border-radius:50%;background:var(--red)}
+.gauge span{position:absolute;right:22px;font-size:16px;color:var(--foam);white-space:nowrap;transform:translateY(-50%);opacity:.8}
+.b1 .art{transform:scale(1.75);transform-origin:50% 42%}
+.b1 .title{position:absolute;left:50%;bottom:74px;width:640px;transform:translateX(-50%);filter:brightness(0) invert(.96);z-index:4}
+.b1 .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,19,31,0) 55%,rgba(17,19,31,.55));z-index:2}
+.b2 .art{filter:brightness(.72) saturate(.9)}
+.b2 .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,29,46,.1),rgba(26,29,46,.78) 92%);z-index:2}
+.b2 .t{position:absolute;left:96px;bottom:110px;z-index:4;color:var(--foam)}
+.b2 .t .k{font-size:22px;color:var(--red)}
+.b2 .t .n{font-size:96px;line-height:1}
+.b3 .art{filter:brightness(.26) saturate(.55) blur(3px);transform:scale(1.04)}
+.b3 .veil{position:absolute;inset:0;background:rgba(26,29,46,.62);z-index:2}
+.b3 .lb{position:absolute;left:150px;top:300px;height:150px;z-index:4}
+.b3 .tb{position:absolute;left:310px;top:258px;z-index:4}
+.b3 .go{position:absolute;right:150px;top:340px;z-index:4;font-size:30px;text-align:right}
+.b3 .go small{display:block;font-size:18px;opacity:.75;margin-top:8px}
+
+/* C: side A, side B */
+.c .big{position:absolute;top:150px;height:400px}
+.c .list{position:absolute;top:220px}
+.c .win{position:absolute;top:0;bottom:0;width:330px;overflow:hidden}
+.c .win img{position:absolute;top:0;height:100%;width:auto;max-width:none;left:-300px}
+.tape{position:absolute;left:100px;right:100px;bottom:64px;height:40px}
+.tape .ln{position:absolute;left:52px;right:52px;top:19px;height:2px;background:rgba(224,82,82,.3)}
+.tape .ln b{position:absolute;left:0;top:0;bottom:0;background:var(--red)}
+.reel{position:absolute;top:0;width:40px;height:40px;border:2px solid var(--red);border-radius:50%}
+.reel::after{content:"";position:absolute;inset:11px;border-radius:50%;background:var(--red)}
+.tape .tl{position:absolute;top:-30px;font-size:17px;opacity:.85}
+.c1 .big{left:110px}.c1 .list{left:520px}.c1 .win{right:0}
+.c3 .big{right:110px}.c3 .list{left:430px}.c3 .win{left:0}
+.c2{background:var(--navy-deep)}
+.c2 .stage{position:absolute;inset:0;perspective:2200px}
+.c2 .face{position:absolute;top:60px;width:1100px;height:620px;background:var(--navy);box-shadow:0 40px 90px rgba(0,0,0,.55)}
+.c2 .fa{left:-40px;transform-origin:100% 50%;transform:rotateY(58deg)}
+.c2 .fb{left:400px;transform-origin:0 50%;transform:rotateY(-34deg)}
+.c2 .face .big{top:80px;height:420px;left:80px}
+.c2 .face .list{top:150px;left:470px}
+.c2 .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.55),rgba(0,0,0,0))}
+</style>
+</head>
+<body>
+<div class="board">
+<header>
+<h1>Mabisyo: three directions</h1>
+<p>Mockups, not the built site. Each frame is one screen at laptop size, in scroll order. Everything uses only what is printed on the cover: its navy, its red, the painting, and its lettering. The title is traced from the cover; the track text is Fondamento, the closest match to the printed font.</p>
+<p>The Dolby mark shows only where the printed cover itself is shown. Anything rebuilt for the site leaves it out: it is a registered trademark, so an official site can only redraw it with Dolby's permission.</p>
+</header>
+
+<section class="dir" id="a">
+<h2>A. The insert, unfolded <span class="pick">my pick</span></h2>
+<p class="lede">The page starts as the printed cassette insert. Scrolling slides the card away and the painting opens up and moves. The card comes back, laid flat, as the tracklist. His other tapes sit on a shelf.</p>
+<div class="shots">
+
+<figure class="shot"><div class="vp"><div class="frame a1">
+  <div class="wm">Mabisyo</div>
+  <div class="nav"><span>Tapes</span><span>Listen</span></div>
+  <img class="obj" src="assets/cover-full.jpg" alt="">
+  <div class="cue">scroll to open</div>
+</div></div><figcaption><b>A1</b>First screen. The cover exactly as printed, still.</figcaption></figure>
+
+<figure class="shot"><div class="vp"><div class="frame a2">
+  <div class="art"><img class="fill" src="assets/wide.jpg" alt=""></div>
+  <div class="spine paper"><img src="assets/title.png" alt=""></div>
+  <div class="nav on-art"><span>Tapes</span><span>Listen</span></div>
+  <div class="play">Jazz And Smoke Night<span>A1 · 2:53</span></div>
+</div></div><figcaption><b>A2</b>After scrolling. The card has slid to a spine, the painting is wide and the loop plays.</figcaption></figure>
+
+<figure class="shot"><div class="vp"><div class="frame a3 paper">
+  <img class="title" src="assets/title.png" alt="">
+  <div class="crease"></div>
+  <img class="la" src="assets/letter-a.svg" alt="">
+  <ol class="trk ta" data-side="A"></ol>
+  <ol class="trk tb" data-side="B"></ol>
+  <img class="lb" src="assets/letter-b.svg" alt="">
+  <div class="meta"><span>Mabisyo · Chile · 2024</span><span>Cassette and digital on Bandcamp</span></div>
+  <div class="peek" data-shelf="peek"></div>
+</div></div><figcaption><b>A3</b>The card laid flat is the tracklist. Each track links to Bandcamp. The shelf peeks in below.</figcaption></figure>
+
+<figure class="shot"><div class="vp"><div class="frame a4 paper">
+  <div class="head">Mabisyo · tapes</div>
+  <div class="shelf" data-shelf="full"></div>
+  <div class="ledge"></div>
+  <div class="now"><div class="n">The Tears of the Sea</div><div class="s">2024 · 8 tracks · open the tape</div></div>
+</div></div><figcaption><b>A4</b>The shelf. Every Mabisyo cover has a printed spine, so the catalog is the spines. Picking one pulls it out.</figcaption></figure>
+
+</div>
+</section>
+
+<section class="dir" id="b">
+<h2>B. The descent</h2>
+<p class="lede">Scrolling sinks you. The video follows the scroll: close on her face at the surface, then pulling back and down into the dark, where the tracks are. This needs a new video, and a scroll-tied video shows every frame slowly, so glitches are easier to see.</p>
+<div class="shots">
+
+<figure class="shot"><div class="vp"><div class="frame b1">
+  <img class="fill art" src="assets/wide.jpg" alt="">
+  <div class="veil"></div>
+  <img class="title" src="assets/title.png" alt="">
+  <div class="wm" style="color:var(--foam)">Mabisyo</div>
+  <div class="gauge"><i style="top:0"></i><span style="top:0">Surface</span><span style="top:36%">Side A</span><span style="top:70%">Side B</span><span style="top:100%">Floor</span></div>
+</div></div><figcaption><b>B1</b>Surface. Close on her face, title in the light.</figcaption></figure>
+
+<figure class="shot"><div class="vp"><div class="frame b2">
+  <img class="fill art" src="assets/wide.jpg" alt="">
+  <div class="veil"></div>
+  <div class="t"><div class="k">Side A · 2 · 5:22</div><div class="n">Golden Sax</div></div>
+  <div class="gauge"><i style="top:44%"></i><span style="top:0">Surface</span><span style="top:36%">Side A</span><span style="top:70%">Side B</span><span style="top:100%">Floor</span></div>
+</div></div><figcaption><b>B2</b>Mid-water. The camera has pulled back, and one track at a time passes by.</figcaption></figure>
+
+<figure class="shot"><div class="vp"><div class="frame b3">
+  <img class="fill art" src="assets/wide.jpg" alt="">
+  <div class="veil"></div>
+  <img class="lb" src="assets/letter-b.svg" alt="">
+  <ol class="trk tb" data-side="B"></ol>
+  <div class="go">Listen on Bandcamp<small>Name your price</small></div>
+  <div class="gauge"><i style="top:100%"></i><span style="top:0">Surface</span><span style="top:36%">Side A</span><span style="top:70%">Side B</span><span style="top:100%">Floor</span></div>
+</div></div><figcaption><b>B3</b>The floor. The painting is almost gone, and the card's navy takes over.</figcaption></figure>
+
+</div>
+</section>
+
+<section class="dir" id="c">
+<h2>C. Side A, Side B</h2>
+<p class="lede">The page is the tape. Scrolling plays Side A, the page flips over, then Side B. The painting sits in a narrow window at the edge.</p>
+<div class="shots">
+
+<figure class="shot"><div class="vp"><div class="frame c c1 paper">
+  <div class="wm">Mabisyo · The Tears of the Sea</div>
+  <img class="big" src="assets/letter-a.svg" alt="">
+  <ol class="trk list" data-side="A" style="font-size:40px;width:500px"></ol>
+  <div class="win"><img src="assets/wide.jpg" alt=""></div>
+  <div class="tape"><span class="tl" style="left:52px">Side A · 16:37</span><div class="reel" style="left:0"></div><div class="ln"><b style="width:34%"></b></div><div class="reel" style="right:0"></div></div>
+</div></div><figcaption><b>C1</b>Side A. The reel line at the bottom is the scroll position.</figcaption></figure>
+
+<figure class="shot"><div class="vp"><div class="frame c c2">
+  <div class="stage">
+    <div class="face fb"><img class="big" src="assets/letter-b.svg" alt=""><ol class="trk list" data-side="B" style="font-size:40px;width:520px"></ol></div>
+    <div class="face fa"><img class="big" src="assets/letter-a.svg" alt=""><ol class="trk list" data-side="A" style="font-size:40px;width:520px"></ol><div class="shade"></div></div>
+  </div>
+</div></div><figcaption><b>C2</b>The flip between sides, halfway through.</figcaption></figure>
+
+<figure class="shot"><div class="vp"><div class="frame c c3 paper">
+  <div class="wm" style="left:374px">Mabisyo · The Tears of the Sea</div>
+  <img class="big" src="assets/letter-b.svg" alt="">
+  <ol class="trk list" data-side="B" style="font-size:40px;width:500px"></ol>
+  <div class="win"><img src="assets/wide.jpg" alt="" style="left:-1110px"></div>
+  <div class="tape" style="left:430px"><span class="tl" style="left:52px">Side B · 17:03</span><div class="reel" style="left:0"></div><div class="ln"><b style="width:71%"></b></div><div class="reel" style="right:0"></div></div>
+</div></div><figcaption><b>C3</b>Side B, mirrored.</figcaption></figure>
+
+</div>
+</section>
+</div>
+
+<script>
+const T = {
+  A: [['Jazz And Smoke Night','2:53'],['Golden Sax','5:22'],['Dreams In Another Dialect','5:34'],['Distant Reflections','2:48']],
+  B: [['Life Is Ethereal','3:40'],["Soul's Quiet Reverie",'3:56'],['The Last Love Letter','5:36'],['Swinging Shadows','3:51']]
+};
+document.querySelectorAll('.trk').forEach(ol => {
+  const plain = ol.hasAttribute('data-plain');
+  ol.innerHTML = T[ol.dataset.side].map((t, i) =>
+    '<li><span>' + (i + 1) + '. ' + t[0] + '</span>' + (plain ? '' : '<span class="d">' + t[1] + '</span>') + '</li>').join('');
+});
+// where each cover's printed spine sits, as a fraction of the cover's width (measured by eye)
+const SHELF = [
+  ['seasoning-the-jazz-trilogy', .2], ['this-isnt-ai-jazz', .2], ['beauty-is-still-something-simple', .2],
+  ['TEARS', .2], ['jazz-up-your-christmas', .03], ['lsd-beats', .19], ['contemplate-your-darkness', .2], ['brushes', .62]
+];
+document.querySelectorAll('[data-shelf]').forEach(el => {
+  const full = el.dataset.shelf === 'full';
+  el.innerHTML = SHELF.map(([slug, x]) => {
+    if (slug === 'TEARS') {
+      return full ? '<div class="cas sel"><img src="assets/cover-full.jpg" alt=""></div>'
+                  : '<div class="cas"><img src="assets/cover-full.jpg" alt="" style="left:-' + Math.round(340 * x) + 'px"></div>';
+    }
+    const h = full ? 430 : 340;
+    return '<div class="cas"><img src="assets/alb-' + slug + '.jpg" alt="" style="left:-' + Math.round(h * x) + 'px"></div>';
+  }).join('');
+});
+function fit() {
+  document.querySelectorAll('.vp').forEach(vp => { vp.firstElementChild.style.transform = 'scale(' + vp.clientWidth / 1440 + ')'; });
+}
+const only = new URLSearchParams(location.search).get('f');
+if (only) {
+  const fr = document.querySelector('.frame.' + only).parentElement;
+  document.body.innerHTML = ''; document.body.style.padding = 0; document.body.appendChild(fr);
+  fr.style.width = '100vw';
+}
+addEventListener('resize', fit); fit();
+</script>
+</body>
+</html>

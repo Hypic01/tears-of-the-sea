@@ -4,3 +4,4 @@ masters/
 .DS_Store
 .claude/launch.json
 __pycache__/
+mockups/assets/alb-*.jpg
