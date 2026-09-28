@@ -84,13 +84,19 @@ def draw(f, i):
 
 if not sheet:
     pipe = subprocess.Popen(['ffmpeg', '-loglevel', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', f'{W}x{H}', '-r', f'{fps}',
-                             '-i', '-', '-c:v', 'libx264', '-preset', 'slow', '-crf', '14', '-pix_fmt', 'yuv420p', '-an', dst], stdin=subprocess.PIPE)
+                             '-i', '-', '-vf', 'scale=out_color_matrix=bt709:out_range=tv,format=yuv420p', '-c:v', 'libx264', '-preset', 'slow', '-crf', '14',
+                             '-x264-params', 'colorprim=bt709:transfer=bt709:colormatrix=bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709',
+                             '-colorspace', 'bt709', '-color_range', 'tv', '-an', dst], stdin=subprocess.PIPE)
 shots = []
 i = 0
+# decode with the right colour matrix (OpenCV's own decode shifts BT.709 video slightly toward green)
+dec = subprocess.Popen(['ffmpeg', '-loglevel', 'error', '-i', src, '-vf', 'scale=in_color_matrix=bt709:in_range=tv:out_range=pc,format=bgr24',
+                        '-f', 'rawvideo', '-'], stdout=subprocess.PIPE)
 while True:
-    ok, f = cap.read()
-    if not ok:
+    buf = dec.stdout.read(W * H * 3)
+    if len(buf) < W * H * 3:
         break
+    f = np.frombuffer(buf, np.uint8).reshape(H, W, 3).copy()
     g = draw(f, i)
     if sheet and i in (0, 150):
         shots.append(g)
