@@ -19,6 +19,7 @@ vercel deploy --prod                       # Claude or Joon only
 
 - ONE master (`masters/wide_final3_master.mp4`, 2560x1440, 533 frames, loops seamlessly). The tall cut is a straight crop of it (`crop=810:1440:872:0` -> `tall_final3_master.mp4`), never a separate render, so every ratio shows the same scene. Joon rejected a version where desktop and phone differed.
 - Colour: final3 = final2 + `pipeline/cover_match.cube`, fitted by `pipeline/color_match.py` so her skin matches the original album cover (Joon, 2026-09-27; skin patch went from 211,210,190 to 241,221,216 against the cover's 244,223,218). final2 was untagged BT.601, which browsers read as BT.709. Every master and web encode is now tagged BT.709, limited range; keep it that way.
+- Assets are cached for a week (`vercel.json`), so when a video or poster is replaced, bump the `?v=` on its URLs in `index.html`.
 - Each cut ships as AV1 (libsvtav1) and H.264, each at most ~13.5 MB, via `pipeline/web_encode.py`. The page picks the cut from the hero's own aspect ratio (ResizeObserver) and AV1 via `canPlayType(...) === 'probably'`.
 - `masters/` is gitignored (large). It is the only copy of the finished render; do not delete it.
 - Known issue to fix next: faint shadow duplicates of koi along the two vertical seam bands beside her face (x about 873 and 1682 in the master), from two sources blended over the overlap.
