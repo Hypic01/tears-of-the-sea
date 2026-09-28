@@ -1,0 +1,6 @@
+# local-only: render masters and source kits (large, regenerable only with AI credits, keep backed up)
+masters/
+.vercel
+.DS_Store
+.claude/launch.json
+__pycache__/
