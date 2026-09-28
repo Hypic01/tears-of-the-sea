@@ -25,7 +25,7 @@ finished. Nothing is sold. It stays labeled as a concept until the artist replie
 | # | Section | Content |
 |---|---|---|
 | 1 | The insert | The cover as printed, centred on `#11131F`. The illustration area is a window onto the video, already playing. "Mabisyo" top left, "Tapes" and "Listen" top right. |
-| 2 | The opening | Pinned scroll. The window grows until the video fills the screen; the card slides left until only the title spine (150px) remains. Current track name bottom right. |
+| 2 | The opening | Pinned scroll. The window grows until the video fills the whole screen; the card slides off to the left (Joon, 2026-09-28: a spine cut the title at an odd spot). |
 | 3 | The card, flat | Traced title, fold line, A and B letters, eight tracks with lengths, each linking to its Bandcamp track page. One line: "Mabisyo · Chile · 2024" and "Cassette and digital on Bandcamp". |
 | 4 | The shelf | All albums as spines cropped from their real covers, newest first. Picking a spine pulls it out: full cover, name, year, track count, link to Bandcamp. |
 | 5 | The foot | Credit line and the concept notice. |
