@@ -9,13 +9,17 @@ import json, os, re, sys, urllib.request
 from email.utils import parsedate_to_datetime
 
 fail = []
-html = open('index.html').read(); css = open('css/site.css').read(); js = open('js/opening.js').read() + open('js/shelf.js').read()
+import glob
+pages = ['index.html'] + sorted(glob.glob('tape/*/index.html'))
+html = '\n'.join(open(p).read() for p in pages); css = open('css/site.css').read(); js = open('js/opening.js').read() + open('js/shelf.js').read()
 
-refs = set(re.findall(r'(?:src|href|srcset)="([^"#]+)"', html)) | set(re.findall(r"'((?:assets|data)/[^']+)'", js)) | {'assets/' + u for u in re.findall(r'url\(\.\./assets/([^)]+)\)', css)}
+refs = set(re.findall(r'(?:src|href|srcset)="([^"#]+)"', html)) | set(re.findall(r'"(/assets/[^"]+)"', html)) | set(re.findall(r"'(/(?:assets|data)/[^']+)'", js)) | set(re.findall(r'url\((/assets/[^)]+)\)', html))
 for r in sorted(refs):
     if r.startswith(('http', 'data:', 'mailto:')):
         continue
-    path = r.split('?')[0]
+    path = r.split('?')[0].lstrip('/')
+    if path.endswith('/') or path == '':
+        path += 'index.html'
     if not os.path.exists(path):
         fail.append('missing file: ' + path)
 
@@ -28,7 +32,7 @@ if hexes - allowed:
     fail.append('unexpected colours: %s' % (hexes - allowed))
 for rgb in set(re.findall(r'rgba?\(([^)]+)\)', css)):
     c = tuple(int(float(x)) for x in rgb.split(',')[:3])
-    if c not in {(0, 0, 0), (255, 255, 255), (255, 70, 68), (15, 20, 32)}:
+    if c not in {(0, 0, 0), (255, 255, 255), (15, 20, 32)}:
         fail.append('unexpected rgb colour: ' + rgb)
 
 al = json.load(open('data/albums.json'))
@@ -41,8 +45,10 @@ for a in al:
             fail.append(f"{a.get('slug')}: no {k}")
     if not os.path.exists(a['cover']):
         fail.append('missing cover: ' + a['cover'])
-if sum(1 for a in al if a.get('featured')) != 1:
-    fail.append('exactly one album must be featured')
+for a in al:
+    if a.get('page') and not os.path.exists(f"tape/{a['slug']}/index.html"):
+        fail.append('no page for ' + a['slug'])
+print('on the shelf', sum(1 for a in al if a.get('shelf')), 'with pages', sum(1 for a in al if a.get('page')))
 
 banned = re.findall(r'\b(?:delve|leverage|passionate|robust|utilize|seamless|journey)\b|[—–]', re.sub(r'<script.*?</script>', '', html, flags=re.S))
 if banned:

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" style="--navy:{{ground}};--deep:{{deep}};--red:{{ink}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{pageTitle}}</title>
+<meta name="description" content="{{description}}">
+<meta name="theme-color" content="{{deep}}">
+<meta property="og:title" content="{{pageTitle}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://tears-of-the-sea.vercel.app/assets/tapes/{{slug}}/cover.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23161E2E'/%3E%3Ccircle cx='8' cy='8' r='4' fill='%23FF4644'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap">
+<link rel="stylesheet" href="/css/site.css?v={{cssV}}">
+</head>
+<body>
+<a class="skip" href="#tape">Skip to the tracklist</a>
+
+<header class="nav">
+  <a class="nav-name" href="/">Mabisyo</a>
+  <nav aria-label="Site">
+    <a href="#shelf">Tapes</a>
+    <a href="{{bandcamp}}" target="_blank" rel="noopener">Listen</a>
+  </nav>
+</header>
+
+<main>
+<section class="opening" id="top" aria-label="{{title}}, cassette cover">
+  <div class="stage">
+    <div class="plate" aria-hidden="true"></div>
+    <div class="win" aria-hidden="true">
+      <img class="win-still" src="{{stillSrc}}" alt="">
+      {{videoTag}}
+    </div>
+    <img class="card" src="/assets/tapes/{{slug}}/card.webp" width="656" height="1800" alt="Cassette insert for {{title}}: the title on the spine, side A and side B track names">
+    <p class="cue" aria-hidden="true">scroll to open</p>
+  </div>
+  <!-- shown when motion is off or scripts do not run: the printed cover, then the illustration, both still -->
+  <div class="stills">
+    <img class="still-cover" src="/assets/tapes/{{slug}}/cover.webp" width="1200" height="1200" alt="{{title}} cassette cover: {{coverAlt}}, beside the card with the tracklist">
+    {{stillArt}}
+  </div>
+</section>
+
+<section class="tape" id="tape" aria-labelledby="tape-title"{{paperStyle}}>
+  <div class="tape-in">
+    <h1 id="tape-title" class="tape-title"><img src="/assets/tapes/{{slug}}/title.svg" width="{{title_w}}" height="{{title_h}}" alt="{{title}}"></h1>
+    <div class="fold" aria-hidden="true"></div>
+    <div class="sides">
+      <div class="side">
+        {{letterA}}
+        <ol class="tracks">
+{{sideA}}
+        </ol>
+      </div>
+      <div class="side side-b">
+        <ol class="tracks">
+{{sideB}}
+        </ol>
+        {{letterB}}
+      </div>
+    </div>
+    <figure class="note">
+      <blockquote>{{note}}</blockquote>
+      <figcaption>Mabisyo, album notes</figcaption>
+    </figure>
+    <p class="meta"><span>Mabisyo · Chile · {{released}}</span><a href="{{bandcamp}}" target="_blank" rel="noopener">The whole tape on Bandcamp</a></p>
+  </div>
+</section>
+
+<section class="shelf" id="shelf" aria-labelledby="shelf-title">
+  <h2 id="shelf-title" class="shelf-title">Tapes</h2>
+  <div class="rows" id="rows"></div>
+  <div class="now" id="now" aria-live="polite">
+    <p class="now-title" id="now-title">{{title}}</p>
+    <p class="now-meta"><span id="now-meta">{{year}} · {{nTracks}} tracks</span><a id="now-open" href="/tape/{{slug}}/" hidden>Open the tape</a><a id="now-link" href="{{bandcamp}}" target="_blank" rel="noopener">Bandcamp</a></p>
+  </div>
+  <noscript><p class="meta"><a href="https://mabisyo.bandcamp.com/music">Every tape is on Bandcamp</a></p></noscript>
+</section>
+</main>
+
+<footer class="foot">
+  <p>Mabisyo · <a href="https://mabisyo.bandcamp.com" target="_blank" rel="noopener">mabisyo.bandcamp.com</a></p>
+  <p class="notice">This is a concept, not an official site. Made by <a href="https://joonwoopark.me" target="_blank" rel="noopener">Joon Park</a>. {{artNote}} The music belongs to Mabisyo.</p>
+</footer>
+
+<script id="tape-data" type="application/json">{{config}}</script>
+<script src="/js/opening.js?v={{jsV}}" defer></script>
+<script src="/js/shelf.js?v={{jsV}}" defer></script>
+</body>
+</html>

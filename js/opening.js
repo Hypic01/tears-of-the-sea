@@ -11,11 +11,9 @@
   var card = sec.querySelector('.card'), cue = sec.querySelector('.cue');
   var video = sec.querySelector('.win-video'), still = sec.querySelector('.win-still');
 
-  // the tall cut is a crop of the wide master: the cover's painting area (x 810 to 1730 of 2560)
-  var SRC = {
-    wide: { av1: 'assets/hero-wide.av1.mp4?v=3', h264: 'assets/hero-wide.h264.mp4?v=3', codec: 'av01.0.12M.08', poster: 'assets/poster-wide.jpg?v=3', ar: 2560 / 1440, a0: 810 / 2560 },
-    tall: { av1: 'assets/hero-tall.av1.mp4?v=3', h264: 'assets/hero-tall.h264.mp4?v=3', codec: 'av01.0.08M.08', poster: 'assets/poster-tall.jpg?v=3', ar: 920 / 1440, a0: 0 }
-  };
+  // each page carries its album's sources. With a video, the tall cut is a crop of the wide master (the
+  // cover's illustration area). Without one, both cuts are the illustration itself, zoomed to fill.
+  var SRC = JSON.parse(document.getElementById('tape-data').textContent);
   var CARD = 656 / 1800;      // card width as a share of the cover
   var probe = document.createElement('video');
   function av1(c) { return !!(probe.canPlayType && probe.canPlayType('video/mp4; codecs="' + c + '"') === 'probably'); }
@@ -23,7 +21,7 @@
   var cut = null, g = null, p = 0, target = 0, ticking = false, inView = true;
 
   function play() {
-    if (!inView || document.hidden || !video.paused || !video.currentSrc) return;
+    if (!video || !inView || document.hidden || !video.paused || !video.currentSrc) return;
     var q = video.play(); if (q && q.catch) q.catch(function () {});
   }
   function pick() {
@@ -31,6 +29,7 @@
     if (next === cut) return;
     cut = next;
     var s = SRC[cut];
+    if (!video) { still.src = s.still; return; }
     still.src = s.poster; video.poster = s.poster;
     video.src = av1(s.codec) ? s.av1 : s.h264;
     video.load(); play();
@@ -42,15 +41,16 @@
     var S = Math.min(H * 0.76, W * (W < H ? 0.92 : 0.6));           // the cover, a square
     var cx = (W - S) / 2, cy = (H - S) / 2 + 12;
     var slotW = S * (1 - CARD), k0 = S / vh, x0 = vw * s.a0;
+    var top = (H - vh) * (s.focusY === undefined ? 0.5 : s.focusY);   // which part stays in view when it is taller than the screen
     var kEnd = H / S;                                                // the card grows with the painting as it leaves
     g = {
       H: H, S: S, cx: cx, cy: cy, k0: k0, kEnd: kEnd,
-      tx0: cx + S * CARD - (W - vw) / 2 - x0 * k0, ty0: cy - (H - vh) / 2,
+      tx0: cx + S * CARD - (W - vw) / 2 - x0 * k0, ty0: cy - top,
       clipL: x0, clipR: Math.max(vw - x0 - slotW / k0, 0),
       cardEnd: -S * CARD * kEnd - 60                                 // fully off the left edge: a spine cut the title at an odd spot
     };
     win.style.width = vw + 'px'; win.style.height = vh + 'px';
-    win.style.left = (W - vw) / 2 + 'px'; win.style.top = (H - vh) / 2 + 'px';
+    win.style.left = (W - vw) / 2 + 'px'; win.style.top = top + 'px';
     card.style.height = S + 'px';
     plate.style.width = plate.style.height = S + 'px';
     plate.style.transform = 'translate(' + cx + 'px,' + cy + 'px)';
@@ -82,16 +82,18 @@
   }
 
   root.classList.add('js-open');
-  video.muted = true; video.defaultMuted = true; video.loop = true;
-  video.addEventListener('canplay', play);
-  document.addEventListener('visibilitychange', play);
+  if (video) {
+    video.muted = true; video.defaultMuted = true; video.loop = true;
+    video.addEventListener('canplay', play);
+    document.addEventListener('visibilitychange', play);
+  }
   measure(); read(); p = target; render();
   window.addEventListener('scroll', read, { passive: true });
   window.addEventListener('resize', function () { measure(); read(); });
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(function (en) {
       inView = en[0].isIntersecting;
-      if (inView) play(); else video.pause();
+      if (inView) play(); else if (video) video.pause();
     }).observe(sec);
   }
 })();

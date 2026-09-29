@@ -1,0 +1,75 @@
+{
+ "slug": "the-tears-of-the-sea",
+ "title": "The Tears Of The Sea",
+ "released": "1 August 2024",
+ "year": 2024,
+ "bandcamp": "https://mabisyo.bandcamp.com/album/the-tears-of-the-sea",
+ "ground": "#161E2E",
+ "deep": "#0F141F",
+ "ink": "#FF4644",
+ "sideA": [
+  {
+   "n": 1,
+   "title": "Jazz And Smoke Night",
+   "length": "2:52",
+   "url": "https://mabisyo.bandcamp.com/track/jazz-and-smoke-night"
+  },
+  {
+   "n": 2,
+   "title": "Golden Sax",
+   "length": "5:22",
+   "url": "https://mabisyo.bandcamp.com/track/golden-sax"
+  },
+  {
+   "n": 3,
+   "title": "Dreams In Another Dialect",
+   "length": "5:33",
+   "url": "https://mabisyo.bandcamp.com/track/dreams-in-another-dialect"
+  },
+  {
+   "n": 4,
+   "title": "Distant Reflections",
+   "length": "2:48",
+   "url": "https://mabisyo.bandcamp.com/track/distant-reflections"
+  }
+ ],
+ "sideB": [
+  {
+   "n": 5,
+   "title": "Life Is Ethereal",
+   "length": "3:40",
+   "url": "https://mabisyo.bandcamp.com/track/life-is-ethereal"
+  },
+  {
+   "n": 6,
+   "title": "Soul's Quiet Reverie",
+   "length": "3:55",
+   "url": "https://mabisyo.bandcamp.com/track/souls-quiet-reverie"
+  },
+  {
+   "n": 7,
+   "title": "The Last Love Letter",
+   "length": "5:36",
+   "url": "https://mabisyo.bandcamp.com/track/the-last-love-letter"
+  },
+  {
+   "n": 8,
+   "title": "Swinging Shadows",
+   "length": "3:50",
+   "url": "https://mabisyo.bandcamp.com/track/swinging-shadows"
+  }
+ ],
+ "title_w": 1242,
+ "title_h": 109,
+ "letters": true,
+ "note": "I wanted to do something ambient sounding but not slow.",
+ "artNote": "The cover is animated and widened with AI. The cover artist is unknown, as credited on the album.",
+ "coverAlt": "a girl underwater with blue eyes, orange koi around her face",
+ "video": {
+  "frames": 566,
+  "a0": 0.3164,
+  "tallW": 920,
+  "v": 3
+ },
+ "paper": true
+}

@@ -1,0 +1,79 @@
+{
+ "slug": "beauty-is-still-something-simple",
+ "title": "Beauty Is Still Something Simple",
+ "released": "5 January 2026",
+ "year": 2026,
+ "bandcamp": "https://mabisyo.bandcamp.com/album/beauty-is-still-something-simple",
+ "ground": "#000000",
+ "deep": "#000000",
+ "ink": "#FF00FF",
+ "sideA": [
+  {
+   "n": 1,
+   "title": "Beauty Is Still Present",
+   "length": "2:49",
+   "url": "https://mabisyo.bandcamp.com/track/beauty-is-still-present"
+  },
+  {
+   "n": 2,
+   "title": "I Love Gamer Cats",
+   "length": "2:51",
+   "url": "https://mabisyo.bandcamp.com/track/i-love-gamer-cats"
+  },
+  {
+   "n": 3,
+   "title": "I Know That Link",
+   "length": "2:43",
+   "url": "https://mabisyo.bandcamp.com/track/i-know-that-link"
+  },
+  {
+   "n": 4,
+   "title": "I Still Believe In Fairies",
+   "length": "2:49",
+   "url": "https://mabisyo.bandcamp.com/track/i-still-believe-in-fairies"
+  },
+  {
+   "n": 5,
+   "title": "You Are Beautiful In My Eyes",
+   "length": "2:32",
+   "url": "https://mabisyo.bandcamp.com/track/you-are-beautiful-in-my-eyes"
+  }
+ ],
+ "sideB": [
+  {
+   "n": 6,
+   "title": "I Love You Pierre",
+   "length": "2:20",
+   "url": "https://mabisyo.bandcamp.com/track/i-love-you-pierre"
+  },
+  {
+   "n": 7,
+   "title": "Cat Dealer [Remake]",
+   "length": "2:35",
+   "url": "https://mabisyo.bandcamp.com/track/cat-dealer-remake"
+  },
+  {
+   "n": 8,
+   "title": "OMG I Love This Shit",
+   "length": "3:00",
+   "url": "https://mabisyo.bandcamp.com/track/omg-i-love-this-shit"
+  },
+  {
+   "n": 9,
+   "title": "Your Eyes Are Beautiful",
+   "length": "3:10",
+   "url": "https://mabisyo.bandcamp.com/track/your-eyes-are-beautiful"
+  }
+ ],
+ "title_w": 1638,
+ "title_h": 65,
+ "note": "Beauty will always be something simple, no matter how many layers exist in the sound, in the clothes you wear, or in the makeup you apply.",
+ "artNote": "The cover is animated and widened with AI. The album credits the cover art to the Cyberpunk series.",
+ "coverAlt": "a girl in profile with a blue bob, lit by blue and magenta neon against a black sky",
+ "video": {
+  "frames": 283,
+  "a0": 0.6426,
+  "v": 1
+ },
+ "paper": true
+}

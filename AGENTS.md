@@ -18,9 +18,18 @@ python3 pipeline/fetch_albums.py .         # re-read the artist's Bandcamp into 
 vercel deploy --prod                       # Claude or Joon only
 ```
 
+## Album pages
+
+- Every album page is generated: `python3 pipeline/build_pages.py` writes `tape/<slug>/index.html` for each `data/tapes/<slug>.json` from `templates/tape.html`, and the featured album also to `index.html`. Never edit the generated HTML by hand.
+- To add an album: put its cover and Bandcamp data in `masters/albums/<slug>/` (`cover.png`, `bandcamp.json`), run `python3 pipeline/make_album_assets.py <slug>`, add `note`, `artNote`, `coverAlt` to its json, set `page: true` in `data/albums.json`, run `build_pages.py`.
+- To give an album a video: make `masters/albums/<slug>/wide_still.png` (2560x1440, the illustration 915 wide at full height), generate a start=end clip from it, then `python3 pipeline/album_video.py <slug> <ART_X0> clip.mp4`.
+- Each page takes its colours and title lettering from its own cover. Track text stays Fondamento on every page.
+- The shelf shows only albums with `shelf: true` (the ones on his Spotify). Joon set the scope at his 18 Spotify albums; 13 are matched so far.
+- Rights: Beauty Is Still Something Simple uses Cyberpunk: Edgerunners art and Jamming Through The Cosmos uses Cowboy Bebop art. Joon chose to animate Beauty anyway (2026-09-28, non-commercial concept). Each page's foot says where its cover art comes from. Raise this again before animating any other cover that uses existing artwork.
+
 ## Design rules (from the spec, do not drift)
 
-- Colours measured from the printed cover: navy `#161E2E`, deep navy `#0F1420`, red ink `#FF4644`. Off-white `#F3EEE9` only for text that sits on the painting. `tests/site_check.py` fails on any other colour or font.
+- Colours are measured from each album's printed cover (card colour, card in shadow, ink). Tears of the Sea: navy `#161E2E`, deep navy `#0F1420`, red ink `#FF4644`. Off-white `#F3EEE9` only for text that sits on the painting. `tests/site_check.py` fails on any other colour or font.
 - Words are names, numbers and links. The only sentences are the artist's own album note and the concept notice. No slogans.
 - No pill buttons, numbered section labels, fact boxes or filler tiles. Links are plain red text.
 - The Dolby mark appears only inside the printed cover image. Never redraw it.
@@ -42,7 +51,9 @@ vercel deploy --prod                       # Claude or Joon only
 ## Layout
 
 ```
-index.html, css/, js/   the site
+index.html, tape/       generated pages (home = the featured album)
+templates/, css/, js/   the page template, styles, scripts
+data/tapes/<slug>.json  one album page's data
 data/albums.json        the shelf: one entry per album (slug, title, year, date, tracks, bandcamp, cover, spineX, featured)
 assets/                 served: hero-{wide,tall}.{av1,h264}.mp4, posters, card.webp, cover.webp, title.svg, letters, covers/
 pipeline/               Python (OpenCV + ffmpeg) that builds the video and the site assets; see pipeline/README.md

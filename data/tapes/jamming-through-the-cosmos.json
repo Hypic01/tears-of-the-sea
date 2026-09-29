@@ -1,0 +1,81 @@
+{
+ "slug": "jamming-through-the-cosmos",
+ "title": "Jamming Through The Cosmos",
+ "released": "14 December 2024",
+ "year": 2024,
+ "bandcamp": "https://mabisyo.bandcamp.com/album/jamming-through-the-cosmos",
+ "ground": "#333333",
+ "deep": "#232323",
+ "ink": "#FFFFFF",
+ "sideA": [
+  {
+   "n": 1,
+   "title": "Everything",
+   "length": "1:22",
+   "url": "https://mabisyo.bandcamp.com/track/everything"
+  },
+  {
+   "n": 2,
+   "title": "Frosted Horizons",
+   "length": "1:24",
+   "url": "https://mabisyo.bandcamp.com/track/frosted-horizons"
+  },
+  {
+   "n": 3,
+   "title": "Shivering Stars",
+   "length": "1:28",
+   "url": "https://mabisyo.bandcamp.com/track/shivering-stars"
+  },
+  {
+   "n": 4,
+   "title": "Tranquility Under Water",
+   "length": "1:24",
+   "url": "https://mabisyo.bandcamp.com/track/tranquility-under-water"
+  },
+  {
+   "n": 5,
+   "title": "Whispers of Snowfall",
+   "length": "1:30",
+   "url": "https://mabisyo.bandcamp.com/track/whispers-of-snowfall"
+  }
+ ],
+ "sideB": [
+  {
+   "n": 6,
+   "title": "Dusk in December",
+   "length": "1:22",
+   "url": "https://mabisyo.bandcamp.com/track/dusk-in-december"
+  },
+  {
+   "n": 7,
+   "title": "I Know You Won't Come Back",
+   "length": "1:24",
+   "url": "https://mabisyo.bandcamp.com/track/i-know-you-wont-come-back"
+  },
+  {
+   "n": 8,
+   "title": "Frozen Shadows",
+   "length": "1:27",
+   "url": "https://mabisyo.bandcamp.com/track/frozen-shadows"
+  },
+  {
+   "n": 9,
+   "title": "Glistening Silence",
+   "length": "1:30",
+   "url": "https://mabisyo.bandcamp.com/track/glistening-silence"
+  },
+  {
+   "n": 10,
+   "title": "Eternal White Night",
+   "length": "1:24",
+   "url": "https://mabisyo.bandcamp.com/track/eternal-white-night"
+  }
+ ],
+ "title_w": 1484,
+ "title_h": 138,
+ "note": "This album is nothing more than lofi loops that I made while doing my thesis.",
+ "artNote": "The cover uses artwork from Cowboy Bebop.",
+ "coverAlt": "a collage of Cowboy Bebop poster panels in red, yellow, pink and blue",
+ "focusY": 0.42,
+ "paper": false
+}

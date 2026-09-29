@@ -3,13 +3,14 @@
 (function () {
   var rows = document.getElementById('rows');
   if (!rows || !window.fetch) return;
-  var title = document.getElementById('now-title'), meta = document.getElementById('now-meta'), link = document.getElementById('now-link');
+  var title = document.getElementById('now-title'), meta = document.getElementById('now-meta'), link = document.getElementById('now-link'), openLink = document.getElementById('now-open');
+  var here = JSON.parse(document.getElementById('tape-data').textContent).slug;
 
   function open(btn, a, scroll) {
     [].forEach.call(rows.querySelectorAll('.cas[aria-pressed="true"]'), function (b) { b.setAttribute('aria-pressed', 'false'); });
     btn.setAttribute('aria-pressed', 'true');
     var full = btn.querySelector('.full');
-    if (!full.getAttribute('src')) full.src = a.cover;
+    if (!full.getAttribute('src')) full.src = '/' + a.cover;
     // keep the opened cover inside the screen when its spine sits near an edge
     full.style.setProperty('--nudge', '0px');
     var wide = rows.scrollWidth <= rows.clientWidth + 1;
@@ -20,11 +21,15 @@
     title.textContent = a.title;
     meta.textContent = a.year + ' · ' + a.tracks + (a.tracks === 1 ? ' track' : ' tracks');
     link.href = a.bandcamp;
+    // a tape with its own page opens there; the page you are on needs no link to itself
+    openLink.hidden = !(a.page && a.slug !== here);
+    openLink.href = '/tape/' + a.slug + '/';
     if (scroll && btn.scrollIntoView) btn.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
   }
 
-  fetch('data/albums.json?v=1').then(function (r) { return r.json(); }).then(function (albums) {
+  fetch('/data/albums.json?v=2').then(function (r) { return r.json(); }).then(function (albums) {
     var byYear = {}, years = [], first = null;
+    albums = albums.filter(function (a) { return a.shelf; });
     albums.forEach(function (a) { if (!byYear[a.year]) { byYear[a.year] = []; years.push(a.year); } byYear[a.year].push(a); });
     years.forEach(function (y) {
       var group = document.createElement('div');
@@ -36,13 +41,13 @@
         b.type = 'button'; b.className = 'cas'; b.setAttribute('aria-pressed', 'false'); b.setAttribute('aria-label', a.title + ', ' + a.year);
         b.style.setProperty('--x', a.spineX);
         var slice = document.createElement('span'); slice.className = 'slice';
-        var img = new Image(); img.alt = ''; img.loading = 'lazy'; img.decoding = 'async'; img.src = a.cover;
+        var img = new Image(); img.alt = ''; img.loading = 'lazy'; img.decoding = 'async'; img.src = '/' + a.cover;
         slice.appendChild(img); b.appendChild(slice);
         var full = new Image(); full.alt = ''; full.className = 'full'; full.decoding = 'async';
         b.appendChild(full);
         b.addEventListener('click', function () { open(b, a, true); });
         group.appendChild(b);
-        if (a.featured) { open(b, a, false); first = b; }
+        if (a.slug === here) { open(b, a, false); first = b; }
       });
       rows.appendChild(group);
     });

@@ -1,4 +1,5 @@
-/* Everything here comes from the printed cassette cover: its navy, its red ink, the painting, its lettering. */
+/* Everything here comes from the printed cassette cover: the card's colour, its ink, the illustration, its lettering.
+   Each album page sets --navy (card), --deep (card in shadow) and --red (ink) from its own cover; these are the defaults. */
 :root{
   --navy:#161E2E;        /* the card */
   --deep:#0F1420;        /* the card in shadow: page ground behind the cover */
@@ -45,7 +46,7 @@ ol{padding:0;list-style:none}
 .js-open .cue{display:block;position:absolute;right:var(--pad);bottom:30px;font-size:18px;z-index:3}
 
 /* ---- the card, laid flat ---- */
-.tape{position:relative;background:var(--navy) url(../assets/paper.jpg);background-size:1200px 90px;padding:clamp(88px,11vw,150px) var(--pad) clamp(88px,10vw,140px)}
+.tape{position:relative;background-color:var(--navy);background-size:1200px 90px;padding:clamp(88px,11vw,150px) var(--pad) clamp(88px,10vw,140px)}
 .tape-in{max-width:1180px;margin:0 auto}
 .tape-title img{width:min(900px,100%);height:auto}
 .fold{height:3px;margin:clamp(36px,5vw,64px) calc(var(--pad) * -1) clamp(48px,7vw,96px);background:linear-gradient(180deg,rgba(0,0,0,.7) 0 50%,rgba(255,255,255,.09) 50% 100%)}
@@ -53,8 +54,9 @@ ol{padding:0;list-style:none}
 .side{display:flex;align-items:center;gap:clamp(20px,3vw,44px)}
 .side-b{justify-content:flex-end}
 .side-letter{height:clamp(96px,11vw,150px);width:auto;flex:none}
+.side-glyph{display:flex;align-items:center;font-size:clamp(110px,12.5vw,172px);line-height:1;height:auto}
 .tracks{flex:1;min-width:0;font-size:clamp(20px,1.85vw,27px);line-height:1.2}
-.tracks .t{white-space:nowrap}
+.tracks .t{min-width:0}
 .tracks a{display:flex;align-items:baseline;gap:16px;padding:9px 0;min-height:44px}
 .tracks .d{margin-left:auto;font-size:.68em;opacity:.72;font-variant-numeric:tabular-nums}
 .tracks a:hover .t,.tracks a:focus-visible .t{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}
@@ -62,14 +64,14 @@ ol{padding:0;list-style:none}
 .note blockquote{font-size:clamp(24px,2.6vw,36px);line-height:1.25}
 .note figcaption{margin-top:12px;font-size:17px;opacity:.75}
 .meta{margin-top:clamp(40px,5vw,64px);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 32px;font-size:19px}
-.meta a,.now a,.foot a{border-bottom:1px solid rgba(255,70,68,.45)}
+.meta a,.now a,.foot a{border-bottom:1px solid color-mix(in srgb,var(--red) 45%,transparent)}
 .meta a:hover,.now a:hover,.foot a:hover{text-decoration:none;border-bottom-color:var(--red)}
 
 /* ---- the shelf: every cover has a printed spine, so the catalog is the spines ---- */
 .shelf{background:var(--deep);padding:clamp(80px,10vw,140px) 0 clamp(72px,9vw,120px)}
 .shelf-title{font-weight:400;font-size:22px;padding:0 var(--pad);margin-bottom:clamp(28px,4vw,48px)}
 .rows{--h:clamp(230px,24vw,340px);--sw:calc(var(--h) * .11);display:flex;flex-wrap:wrap;align-items:flex-end;gap:clamp(36px,4vw,56px) clamp(28px,3vw,48px);padding:0 var(--pad)}
-.year{display:flex;align-items:flex-end;gap:7px;border-bottom:2px solid rgba(255,70,68,.5);padding-bottom:0}
+.year{display:flex;align-items:flex-end;gap:7px;border-bottom:2px solid color-mix(in srgb,var(--red) 50%,transparent);padding-bottom:0}
 .year-n{writing-mode:vertical-rl;transform:rotate(180deg);font-size:17px;opacity:.8;padding:0 2px 6px 6px}
 .cas{position:relative;flex:none;width:var(--sw);height:var(--h);padding:0;border:0;background:none;cursor:pointer;transition:transform .35s var(--ease)}
 .slice{position:absolute;inset:0;overflow:hidden;background:var(--navy)}
@@ -82,13 +84,14 @@ ol{padding:0;list-style:none}
 .cas:hover,.cas:focus-visible{transform:translateY(-8px)}
 .cas[aria-pressed="true"]{transform:translateY(-14px);z-index:4}
 .cas[aria-pressed="true"] .full{clip-path:inset(0);opacity:1;transition:clip-path .55s var(--ease),opacity .1s ease}
-.now{position:sticky;bottom:0;z-index:5;margin-top:clamp(36px,4vw,56px);padding:18px var(--pad) 16px;text-align:center;background:var(--deep);border-top:1px solid rgba(255,70,68,.3)}   /* stays in view while you browse the shelf */
+.now{position:sticky;bottom:0;z-index:5;margin-top:clamp(36px,4vw,56px);padding:18px var(--pad) 16px;text-align:center;background:var(--deep);border-top:1px solid color-mix(in srgb,var(--red) 30%,transparent)}   /* stays in view while you browse the shelf */
 .now-title{font-size:clamp(26px,2.8vw,38px);line-height:1.1}
 .now-meta{margin-top:4px;align-items:center;font-size:19px;display:flex;justify-content:center;flex-wrap:wrap;gap:6px 28px}
 .now a{display:inline-flex;align-items:center;min-height:44px}
+.now a[hidden]{display:none}
 
 /* ---- foot ---- */
-.foot{background:var(--deep);border-top:1px solid rgba(255,70,68,.3);padding:32px var(--pad) 44px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 40px;font-size:17px}
+.foot{background:var(--deep);border-top:1px solid color-mix(in srgb,var(--red) 30%,transparent);padding:32px var(--pad) 44px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 40px;font-size:17px}
 .foot .notice{max-width:46em;opacity:.85}
 
 @media (max-width:760px){
@@ -98,6 +101,7 @@ ol{padding:0;list-style:none}
   .sides{grid-template-columns:minmax(0,1fr)}
   .side-b{flex-direction:row-reverse;justify-content:flex-end}
   .side-letter{height:84px;width:64px;object-fit:contain;object-position:left}
+  .side-glyph{font-size:96px;height:auto;width:64px}
   .tracks .t{white-space:normal}
   .rows{--h:250px;--sw:calc(var(--h) * .15);flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:18px;padding-top:18px;-webkit-overflow-scrolling:touch}
   .year{scroll-snap-align:start}

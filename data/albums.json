@@ -7,7 +7,9 @@
   "tracks": 24,
   "bandcamp": "https://mabisyo.bandcamp.com/album/seasoning-the-jazz-trilogy",
   "cover": "assets/covers/seasoning-the-jazz-trilogy.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "clouds-under-dopamine",
@@ -17,7 +19,9 @@
   "tracks": 10,
   "bandcamp": "https://mabisyo.bandcamp.com/album/clouds-under-dopamine",
   "cover": "assets/covers/clouds-under-dopamine.webp",
-  "spineX": 0.253
+  "spineX": 0.253,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "stories-and-truths",
@@ -27,7 +31,9 @@
   "tracks": 6,
   "bandcamp": "https://mabisyo.bandcamp.com/album/stories-and-truths",
   "cover": "assets/covers/stories-and-truths.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "this-isnt-ai-jazz",
@@ -37,7 +43,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/this-isnt-ai-jazz",
   "cover": "assets/covers/this-isnt-ai-jazz.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "beauty-is-still-something-simple",
@@ -47,7 +55,9 @@
   "tracks": 9,
   "bandcamp": "https://mabisyo.bandcamp.com/album/beauty-is-still-something-simple",
   "cover": "assets/covers/beauty-is-still-something-simple.webp",
-  "spineX": 0.203
+  "spineX": 0.25,
+  "shelf": true,
+  "page": true
  },
  {
   "slug": "brushes",
@@ -57,7 +67,9 @@
   "tracks": 12,
   "bandcamp": "https://mabisyo.bandcamp.com/album/brushes",
   "cover": "assets/covers/brushes.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": true,
+  "page": false
  },
  {
   "slug": "jazz-up-your-christmas",
@@ -67,7 +79,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/jazz-up-your-christmas",
   "cover": "assets/covers/jazz-up-your-christmas.webp",
-  "spineX": 0.02
+  "spineX": 0.02,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "lsd-beats",
@@ -77,7 +91,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/lsd-beats",
   "cover": "assets/covers/lsd-beats.webp",
-  "spineX": 0.24
+  "spineX": 0.24,
+  "shelf": true,
+  "page": false
  },
  {
   "slug": "this-isnt-hentai-jazz-deluxe",
@@ -87,7 +103,9 @@
   "tracks": 12,
   "bandcamp": "https://mabisyo.bandcamp.com/album/this-isnt-hentai-jazz-deluxe",
   "cover": "assets/covers/this-isnt-hentai-jazz-deluxe.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "contemplate-your-darkness",
@@ -97,7 +115,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/contemplate-your-darkness",
   "cover": "assets/covers/contemplate-your-darkness.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": true,
+  "page": false
  },
  {
   "slug": "this-isnt-hentai-jazz",
@@ -107,7 +127,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/this-isnt-hentai-jazz",
   "cover": "assets/covers/this-isnt-hentai-jazz.webp",
-  "spineX": 0.302
+  "spineX": 0.302,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "fragments-of-digital-soul",
@@ -117,7 +139,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/fragments-of-digital-soul",
   "cover": "assets/covers/fragments-of-digital-soul.webp",
-  "spineX": 0.268
+  "spineX": 0.268,
+  "shelf": true,
+  "page": false
  },
  {
   "slug": "ethereal-moments",
@@ -127,7 +151,9 @@
   "tracks": 6,
   "bandcamp": "https://mabisyo.bandcamp.com/album/ethereal-moments",
   "cover": "assets/covers/ethereal-moments.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "maid-cafe",
@@ -137,7 +163,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/maid-cafe",
   "cover": "assets/covers/maid-cafe.webp",
-  "spineX": 0.288
+  "spineX": 0.288,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "jamming-through-the-cosmos",
@@ -147,7 +175,9 @@
   "tracks": 10,
   "bandcamp": "https://mabisyo.bandcamp.com/album/jamming-through-the-cosmos",
   "cover": "assets/covers/jamming-through-the-cosmos.webp",
-  "spineX": 0.165
+  "spineX": 0.25,
+  "shelf": true,
+  "page": true
  },
  {
   "slug": "my-sensei-nujabes",
@@ -157,7 +187,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/my-sensei-nujabes",
   "cover": "assets/covers/my-sensei-nujabes.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": true,
+  "page": false
  },
  {
   "slug": "enesis",
@@ -167,7 +199,9 @@
   "tracks": 9,
   "bandcamp": "https://mabisyo.bandcamp.com/album/enesis",
   "cover": "assets/covers/enesis.webp",
-  "spineX": 0.25
+  "spineX": 0.25,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "my-crimson-dreams",
@@ -177,7 +211,9 @@
   "tracks": 7,
   "bandcamp": "https://mabisyo.bandcamp.com/album/my-crimson-dreams",
   "cover": "assets/covers/my-crimson-dreams.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": true,
+  "page": false
  },
  {
   "slug": "almost-5-minutes-of-happiness",
@@ -187,7 +223,9 @@
   "tracks": 2,
   "bandcamp": "https://mabisyo.bandcamp.com/album/almost-5-minutes-of-happiness",
   "cover": "assets/covers/almost-5-minutes-of-happiness.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "the-tears-of-the-sea",
@@ -198,7 +236,8 @@
   "bandcamp": "https://mabisyo.bandcamp.com/album/the-tears-of-the-sea",
   "cover": "assets/covers/the-tears-of-the-sea.webp",
   "spineX": 0.255,
-  "featured": true
+  "shelf": true,
+  "page": true
  },
  {
   "slug": "everything-is-still-under-control",
@@ -208,7 +247,9 @@
   "tracks": 7,
   "bandcamp": "https://mabisyo.bandcamp.com/album/everything-is-still-under-control",
   "cover": "assets/covers/everything-is-still-under-control.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "stories-live-in-time",
@@ -218,7 +259,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/stories-live-in-time",
   "cover": "assets/covers/stories-live-in-time.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "nocturnal-creatures",
@@ -228,7 +271,9 @@
   "tracks": 9,
   "bandcamp": "https://mabisyo.bandcamp.com/album/nocturnal-creatures",
   "cover": "assets/covers/nocturnal-creatures.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "happy-birthday",
@@ -238,7 +283,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/happy-birthday",
   "cover": "assets/covers/happy-birthday.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "the-light-of-my-demons",
@@ -248,7 +295,9 @@
   "tracks": 10,
   "bandcamp": "https://mabisyo.bandcamp.com/album/the-light-of-my-demons",
   "cover": "assets/covers/the-light-of-my-demons.webp",
-  "spineX": 0.205
+  "spineX": 0.205,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "echoes-of-the-subconscious",
@@ -258,7 +307,9 @@
   "tracks": 4,
   "bandcamp": "https://mabisyo.bandcamp.com/album/echoes-of-the-subconscious",
   "cover": "assets/covers/echoes-of-the-subconscious.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "my-rare-tapes-trilogy-remaster",
@@ -268,7 +319,9 @@
   "tracks": 22,
   "bandcamp": "https://mabisyo.bandcamp.com/album/my-rare-tapes-trilogy-remaster",
   "cover": "assets/covers/my-rare-tapes-trilogy-remaster.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "in-the-dreams-of-a-dragon",
@@ -278,7 +331,9 @@
   "tracks": 7,
   "bandcamp": "https://mabisyo.bandcamp.com/album/in-the-dreams-of-a-dragon",
   "cover": "assets/covers/in-the-dreams-of-a-dragon.webp",
-  "spineX": 0.2
+  "spineX": 0.2,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "beauty-is-something-simple",
@@ -288,7 +343,9 @@
   "tracks": 10,
   "bandcamp": "https://mabisyo.bandcamp.com/album/beauty-is-something-simple",
   "cover": "assets/covers/beauty-is-something-simple.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "sun-colored-eyes",
@@ -298,7 +355,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/sun-colored-eyes",
   "cover": "assets/covers/sun-colored-eyes.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "beatmaking-sessions-v-1",
@@ -308,7 +367,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/beatmaking-sessions-v-1",
   "cover": "assets/covers/beatmaking-sessions-v-1.webp",
-  "spineX": 0.29
+  "spineX": 0.29,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "the-dead-eyes-in-the-shadow",
@@ -318,7 +379,9 @@
   "tracks": 10,
   "bandcamp": "https://mabisyo.bandcamp.com/album/the-dead-eyes-in-the-shadow",
   "cover": "assets/covers/the-dead-eyes-in-the-shadow.webp",
-  "spineX": 0.288
+  "spineX": 0.288,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "everything-is-under-control",
@@ -328,7 +391,9 @@
   "tracks": 9,
   "bandcamp": "https://mabisyo.bandcamp.com/album/everything-is-under-control",
   "cover": "assets/covers/everything-is-under-control.webp",
-  "spineX": 0.198
+  "spineX": 0.198,
+  "shelf": true,
+  "page": false
  },
  {
   "slug": "velvet-notes",
@@ -338,7 +403,9 @@
   "tracks": 11,
   "bandcamp": "https://mabisyo.bandcamp.com/album/velvet-notes",
   "cover": "assets/covers/velvet-notes.webp",
-  "spineX": 0.26
+  "spineX": 0.26,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "cries-of-a-lost-soul",
@@ -348,7 +415,9 @@
   "tracks": 9,
   "bandcamp": "https://mabisyo.bandcamp.com/album/cries-of-a-lost-soul",
   "cover": "assets/covers/cries-of-a-lost-soul.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "-",
@@ -358,7 +427,9 @@
   "tracks": 10,
   "bandcamp": "https://mabisyo.bandcamp.com/album/-",
   "cover": "assets/covers/-.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "bootleg-tapes-v-1",
@@ -368,7 +439,9 @@
   "tracks": 10,
   "bandcamp": "https://mabisyo.bandcamp.com/album/bootleg-tapes-v-1",
   "cover": "assets/covers/bootleg-tapes-v-1.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "in-search-of-freedom",
@@ -378,7 +451,9 @@
   "tracks": 10,
   "bandcamp": "https://mabisyo.bandcamp.com/album/in-search-of-freedom",
   "cover": "assets/covers/in-search-of-freedom.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "the-theory-of-premonitions",
@@ -388,7 +463,9 @@
   "tracks": 10,
   "bandcamp": "https://mabisyo.bandcamp.com/album/the-theory-of-premonitions",
   "cover": "assets/covers/the-theory-of-premonitions.webp",
-  "spineX": 0.165
+  "spineX": 0.165,
+  "shelf": true,
+  "page": false
  },
  {
   "slug": "light-up-your-heart",
@@ -398,7 +475,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/light-up-your-heart",
   "cover": "assets/covers/light-up-your-heart.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "children-of-mirror",
@@ -408,7 +487,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/children-of-mirror",
   "cover": "assets/covers/children-of-mirror.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "seasoning-the-jazz-v-3",
@@ -418,7 +499,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/seasoning-the-jazz-v-3",
   "cover": "assets/covers/seasoning-the-jazz-v-3.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "one-secret-after-another",
@@ -428,7 +511,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/one-secret-after-another",
   "cover": "assets/covers/one-secret-after-another.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "the-funeral-of-the-flowers",
@@ -438,7 +523,9 @@
   "tracks": 7,
   "bandcamp": "https://mabisyo.bandcamp.com/album/the-funeral-of-the-flowers",
   "cover": "assets/covers/the-funeral-of-the-flowers.webp",
-  "spineX": 0.165
+  "spineX": 0.165,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "clouds-under-nicotine",
@@ -448,7 +535,9 @@
   "tracks": 6,
   "bandcamp": "https://mabisyo.bandcamp.com/album/clouds-under-nicotine",
   "cover": "assets/covers/clouds-under-nicotine.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": true,
+  "page": false
  },
  {
   "slug": "seasoning-the-jazz-v-2",
@@ -458,7 +547,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/seasoning-the-jazz-v-2",
   "cover": "assets/covers/seasoning-the-jazz-v-2.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "lo-fi-for-reading-manga-v-2",
@@ -468,7 +559,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/lo-fi-for-reading-manga-v-2",
   "cover": "assets/covers/lo-fi-for-reading-manga-v-2.webp",
-  "spineX": 0.165
+  "spineX": 0.165,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "hentai-jazz-deluxe",
@@ -478,7 +571,9 @@
   "tracks": 12,
   "bandcamp": "https://mabisyo.bandcamp.com/album/hentai-jazz-deluxe",
   "cover": "assets/covers/hentai-jazz-deluxe.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "the-worst-generation",
@@ -488,7 +583,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/the-worst-generation",
   "cover": "assets/covers/the-worst-generation.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "air-of-other-times",
@@ -498,7 +595,9 @@
   "tracks": 6,
   "bandcamp": "https://mabisyo.bandcamp.com/album/air-of-other-times",
   "cover": "assets/covers/air-of-other-times.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "lo-fi-for-reading-manga",
@@ -508,7 +607,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/lo-fi-for-reading-manga",
   "cover": "assets/covers/lo-fi-for-reading-manga.webp",
-  "spineX": 0.247
+  "spineX": 0.247,
+  "shelf": true,
+  "page": false
  },
  {
   "slug": "seasoning-the-jazz-v-1",
@@ -518,7 +619,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/seasoning-the-jazz-v-1",
   "cover": "assets/covers/seasoning-the-jazz-v-1.webp",
-  "spineX": 0.165
+  "spineX": 0.165,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "the-knowledge-behind-the-eyes",
@@ -528,7 +631,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/the-knowledge-behind-the-eyes",
   "cover": "assets/covers/the-knowledge-behind-the-eyes.webp",
-  "spineX": 0.143
+  "spineX": 0.143,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "betrayals-and-secrets",
@@ -538,7 +643,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/betrayals-and-secrets",
   "cover": "assets/covers/betrayals-and-secrets.webp",
-  "spineX": 0.22
+  "spineX": 0.22,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "origami-brushes-mini-tape",
@@ -548,7 +655,9 @@
   "tracks": 6,
   "bandcamp": "https://mabisyo.bandcamp.com/album/origami-brushes-mini-tape",
   "cover": "assets/covers/origami-brushes-mini-tape.webp",
-  "spineX": 0.265
+  "spineX": 0.265,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "more-of-the-same-v-1",
@@ -558,7 +667,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/more-of-the-same-v-1",
   "cover": "assets/covers/more-of-the-same-v-1.webp",
-  "spineX": 0.25
+  "spineX": 0.25,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "children-of-anomaly",
@@ -568,7 +679,9 @@
   "tracks": 10,
   "bandcamp": "https://mabisyo.bandcamp.com/album/children-of-anomaly",
   "cover": "assets/covers/children-of-anomaly.webp",
-  "spineX": 0.17
+  "spineX": 0.17,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "memories-of-semipalatinsk",
@@ -578,7 +691,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/memories-of-semipalatinsk",
   "cover": "assets/covers/memories-of-semipalatinsk.webp",
-  "spineX": 0.263
+  "spineX": 0.263,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "seasoning-the-sample-v-3",
@@ -588,7 +703,9 @@
   "tracks": 7,
   "bandcamp": "https://mabisyo.bandcamp.com/album/seasoning-the-sample-v-3",
   "cover": "assets/covers/seasoning-the-sample-v-3.webp",
-  "spineX": 0.185
+  "spineX": 0.185,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "seasoning-the-sample-v-2",
@@ -598,7 +715,9 @@
   "tracks": 7,
   "bandcamp": "https://mabisyo.bandcamp.com/album/seasoning-the-sample-v-2",
   "cover": "assets/covers/seasoning-the-sample-v-2.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "seasoning-the-sample-v-1",
@@ -608,7 +727,9 @@
   "tracks": 7,
   "bandcamp": "https://mabisyo.bandcamp.com/album/seasoning-the-sample-v-1",
   "cover": "assets/covers/seasoning-the-sample-v-1.webp",
-  "spineX": 0.245
+  "spineX": 0.245,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "my-rare-tapes-v-3",
@@ -618,7 +739,9 @@
   "tracks": 7,
   "bandcamp": "https://mabisyo.bandcamp.com/album/my-rare-tapes-v-3",
   "cover": "assets/covers/my-rare-tapes-v-3.webp",
-  "spineX": 0.237
+  "spineX": 0.237,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "beyond-what-you-see",
@@ -628,7 +751,9 @@
   "tracks": 12,
   "bandcamp": "https://mabisyo.bandcamp.com/album/beyond-what-you-see",
   "cover": "assets/covers/beyond-what-you-see.webp",
-  "spineX": 0.23
+  "spineX": 0.23,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "children-of-radiation",
@@ -638,7 +763,9 @@
   "tracks": 9,
   "bandcamp": "https://mabisyo.bandcamp.com/album/children-of-radiation",
   "cover": "assets/covers/children-of-radiation.webp",
-  "spineX": 0.237
+  "spineX": 0.237,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "virtual-nirvana",
@@ -648,7 +775,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/virtual-nirvana",
   "cover": "assets/covers/virtual-nirvana.webp",
-  "spineX": 0.23
+  "spineX": 0.23,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "my-unreleased-tracks-vol-1",
@@ -658,7 +787,9 @@
   "tracks": 10,
   "bandcamp": "https://mabisyo.bandcamp.com/album/my-unreleased-tracks-vol-1",
   "cover": "assets/covers/my-unreleased-tracks-vol-1.webp",
-  "spineX": 0.445
+  "spineX": 0.445,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "my-rare-tapes-v-2",
@@ -668,7 +799,9 @@
   "tracks": 8,
   "bandcamp": "https://mabisyo.bandcamp.com/album/my-rare-tapes-v-2",
   "cover": "assets/covers/my-rare-tapes-v-2.webp",
-  "spineX": 0.223
+  "spineX": 0.223,
+  "shelf": false,
+  "page": false
  },
  {
   "slug": "my-rare-tapes-v-1",
@@ -678,6 +811,8 @@
   "tracks": 7,
   "bandcamp": "https://mabisyo.bandcamp.com/album/my-rare-tapes-v-1",
   "cover": "assets/covers/my-rare-tapes-v-1.webp",
-  "spineX": 0.21
+  "spineX": 0.21,
+  "shelf": false,
+  "page": false
  }
 ]
