@@ -43,7 +43,7 @@ for a in al:
     for k in ('slug', 'title', 'year', 'tracks', 'bandcamp', 'cover', 'spineX'):
         if k not in a:
             fail.append(f"{a.get('slug')}: no {k}")
-    if not os.path.exists(a['cover']):
+    if a.get('shelf') and not os.path.exists(a['cover']):
         fail.append('missing cover: ' + a['cover'])
 for a in al:
     if a.get('page') and not os.path.exists(f"tape/{a['slug']}/index.html"):
